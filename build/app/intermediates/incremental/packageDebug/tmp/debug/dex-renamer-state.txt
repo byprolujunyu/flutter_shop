@@ -1,0 +1,4 @@
+#Wed Apr 03 09:29:49 CST 2019
+base.0=/Users/lujunyu/jspang/flutter_shop_git/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

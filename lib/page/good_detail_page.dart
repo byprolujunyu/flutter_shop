@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:baixing/page/detail/detail_widget.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:baixing/model/details.dart';
 import 'package:baixing/provider/goods_info.dart';
@@ -30,30 +31,14 @@ class GoodDetailPage extends StatelessWidget {
         future: _getBackInfo(context),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return Provide<DetailsInfoProvide>(
-              builder: (context, child, data) {
-
-                return data != null?Container(
-                  child: SingleChildScrollView(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Image.network(data.goodsInfo.data.goodInfo.image1),
-                        Container(
-                          margin: EdgeInsets.all(8),
-                          child: Text(
-                            '${data.goodsInfo.data.goodInfo.goodsName}',
-                            style: TextStyle(
-                                fontSize: ScreenUtil().setSp(40),
-                                fontWeight: FontWeight.bold),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ):Container(child: Loading(),);
-              },
+            return Container(
+                child:Column(
+                  children: <Widget>[
+                    //关键代码------start
+                    DetailsTopArea(),
+                    //关键代码------end
+                  ],
+                )
             );
           } else {
             return Container(child: Loading(),);
