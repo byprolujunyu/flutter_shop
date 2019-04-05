@@ -19,11 +19,13 @@ class DetailCommandDetail extends StatelessWidget {
         .pICTUREADDRESS;
     print(goodsPic);
     return Container(
-      child: Column(
-        children: <Widget>[
-          getCommendsList(goodsCommand, context),
-          Image.network(goodsPic.toString()),
-        ],
+      height: ScreenUtil().setHeight(2000),      child: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            getCommendsList(goodsCommand, context),
+            Image.network(goodsPic.toString()),
+          ],
+        ),
       ),
     );
   }

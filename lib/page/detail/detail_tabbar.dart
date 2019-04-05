@@ -15,6 +15,7 @@ class DetailsTabbar extends StatelessWidget {
         var isLeft = Provide.value<DetailsInfoProvide>(context).isLeft;
         var isRight = Provide.value<DetailsInfoProvide>(context).isRight;
         return Container(
+          height: ScreenUtil().setHeight(1100),
           child: Column(
             children: <Widget>[
               Row(
@@ -23,11 +24,12 @@ class DetailsTabbar extends StatelessWidget {
                   _myTabBarRight(context, isRight)
                 ],
               ),
-              Container(
+
+        Expanded(child:              Container(
                 child: isLeft
                     ? DetailWebDetail()
                     : DetailCommandDetail()
-              ),
+              ),),
             ],
           ),
         );

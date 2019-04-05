@@ -12,12 +12,12 @@ class DetailWebDetail extends StatelessWidget {
     var goodsPic = Provide.value<DetailsInfoProvide>(context).goodsInfo.data.advertesPicture.pICTUREADDRESS;
     print(goodsPic);
     return Container(
-      child: Column(
+      child:SingleChildScrollView(child:  Column(
         children: <Widget>[
           Html(data: goodsDetail),
           Image.network(goodsPic.toString()),
         ],
-      ),
+      ),)
     );
   }
 }
