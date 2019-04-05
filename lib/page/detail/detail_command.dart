@@ -57,6 +57,7 @@ class DetailCommandDetail extends StatelessWidget {
       return Container(
         height: ms.length * MediaQuery.of(context).size.height / 7,
         child: ListView.builder(
+          physics: new NeverScrollableScrollPhysics(),
           itemBuilder: (context, index) {
             return item(context, ms[index], index);
           },

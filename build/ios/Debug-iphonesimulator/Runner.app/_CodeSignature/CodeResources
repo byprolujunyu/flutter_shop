@@ -114,7 +114,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		wdWq4L+pwobzRwk/1xrywqMqJt4=
+		He5EJaZ6q9B8WeywHh7pCxAEd10=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -122,11 +122,11 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		VPbIIrODe3eHXKMN/yJCEAo5vZc=
+		yW1GVy3xt1qy98I0j06P8QfyjpQ=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		oG5/OGn+vw7vp/nu5DUDoZJ4nFc=
+		KUFFY9R5oMVVu9fyabOQnoCiNDw=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -134,11 +134,15 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/LICENSE</key>
 		<data>
-		3NBghdIaVHF/7rtMPg5R4p75StA=
+		vEIyIiEFHUt8VSt1WaDHm76fhpQ=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.ttf</key>
 		<data>
 		nIzDzw7hjOThppiX5OleKNAxtqM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/img/icon_detai;_page_cart.png</key>
+		<data>
+		OIIiU/CtF5K+X050X3WgHey4qqg=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/isolate_snapshot_data</key>
 		<data>
@@ -146,7 +150,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		wh31HSgOcBvalMia1G9NNuCeDO4=
+		bb5NY5I6aPGsJzvUzNIlHNAy/+s=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -484,11 +488,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wdWq4L+pwobzRwk/1xrywqMqJt4=
+			He5EJaZ6q9B8WeywHh7pCxAEd10=
 			</data>
 			<key>hash2</key>
 			<data>
-			bz5ocuefGRaVst1jBq09sRGiPr/3JObWnYCMiSqAYng=
+			c+Od7ujN+VwPvQX9VGrAYUIS1fw3ZbWS7sbfQxmvUCQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -506,22 +510,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VPbIIrODe3eHXKMN/yJCEAo5vZc=
+			yW1GVy3xt1qy98I0j06P8QfyjpQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			0oyZJeLZbFRjL8elleYaJSyGjnDPfGwuLjoMFuSSN8c=
+			hJNzJUzsF1NBpFd0oJV8v4L3aHGqRvP3PYdLK07WAO4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oG5/OGn+vw7vp/nu5DUDoZJ4nFc=
+			KUFFY9R5oMVVu9fyabOQnoCiNDw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Sps95+7JukayebvM0TLjL1LW1VXXndpKp/O8tOm9ZR8=
+			jLlVx35UBlvRhngxeEOZORkBbBsNRf+lkp8+q3HKSGQ=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -539,11 +543,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3NBghdIaVHF/7rtMPg5R4p75StA=
+			vEIyIiEFHUt8VSt1WaDHm76fhpQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			pAJvZFjE3rP67+bSIC2rnwf1qbhBFxGGY6eumGJ6aQw=
+			tsIhkOYY7m45vOhe9pWG7cWk9vjmYk/PSyYdP+zr9jE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/fonts/MaterialIcons-Regular.ttf</key>
@@ -555,6 +559,17 @@
 			<key>hash2</key>
 			<data>
 			Wuh7JiGdsCj8cMnXMpa8jtW4ekzRz359zPE0NyQ7iRE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/img/icon_detai;_page_cart.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OIIiU/CtF5K+X050X3WgHey4qqg=
+			</data>
+			<key>hash2</key>
+			<data>
+			X5g4YNW5VEWVarNbofdCFNaTXqs3fpmvz0zGG1wDJv8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/isolate_snapshot_data</key>
@@ -572,11 +587,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wh31HSgOcBvalMia1G9NNuCeDO4=
+			bb5NY5I6aPGsJzvUzNIlHNAy/+s=
 			</data>
 			<key>hash2</key>
 			<data>
-			SiagIVdfgGafu/HmVjMBvX9AqOnXSmbYmKXlhGvP0a8=
+			NuF36nS64peF6bRrE6mc/IL2Qme2YBGPcSWpUC5a82Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
