@@ -1,3 +1,5 @@
+import 'package:baixing/page/detail/detail_command.dart';
+import 'package:baixing/page/detail/detail_web.dart';
 import 'package:baixing/provider/goods_info.dart';
 import 'package:baixing/widget/loading_widget.dart';
 import 'package:flutter/material.dart';
@@ -13,10 +15,19 @@ class DetailsTabbar extends StatelessWidget {
         var isLeft = Provide.value<DetailsInfoProvide>(context).isLeft;
         var isRight = Provide.value<DetailsInfoProvide>(context).isRight;
         return Container(
-          child: Row(
+          child: Column(
             children: <Widget>[
-              _myTabBarLeft(context, isLeft),
-              _myTabBarRight(context, isRight)
+              Row(
+                children: <Widget>[
+                  _myTabBarLeft(context, isLeft),
+                  _myTabBarRight(context, isRight)
+                ],
+              ),
+              Container(
+                child: isLeft
+                    ? DetailWebDetail()
+                    : DetailCommandDetail()
+              ),
             ],
           ),
         );

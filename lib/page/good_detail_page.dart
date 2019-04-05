@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:baixing/page/detail/detail_count.dart';
 import 'package:baixing/page/detail/detail_expand.dart';
 import 'package:baixing/page/detail/detail_tabbar.dart';
 import 'package:baixing/page/detail/detail_web.dart';
@@ -34,25 +35,44 @@ class GoodDetailPage extends StatelessWidget {
         future: _getBackInfo(context),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return Container(
-                child:ListView(
-                  children: <Widget>[
-                    //关键代码------start
-                    D(),
-
-                    DetailsExplain(),
-
-                    DetailsTabbar(),
-
-                   DetailWebDetail(),
-                    //关键代码------end
-                  ],
-                )
+            return Column(
+              children: <Widget>[
+                Expanded(
+                    child: Container(
+                  height: ScreenUtil().setHeight(1000),
+                  child: buildListView(),
+                )),
+                Container(
+                  child: CountWidget(),
+                ),
+              ],
             );
           } else {
-            return Container(child: Loading(),);
+            return Container(
+              child: Loading(),
+            );
           }
         },
+      ),
+    );
+  }
+
+  Widget buildListView() {
+    return Container(
+      child: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            //关键代码------start
+            D(),
+
+            DetailsExplain(),
+
+            DetailsTabbar(),
+
+
+            //关键代码------end
+          ],
+        ),
       ),
     );
   }

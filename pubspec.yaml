@@ -31,6 +31,7 @@ dependencies:
   fluro: ^1.4.0
   flutter_spinkit: ^3.1.0
   flutter_html: ^0.9.6
+  common_utils: ^1.0.9
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -46,7 +47,8 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
+  assets:
+     - img/icon_detai;_page_cart.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
