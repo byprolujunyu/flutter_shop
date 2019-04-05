@@ -1,0 +1,91 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:1-33:12
+MERGED from [:fluttertoast] /Users/lujunyu/jspang/flutter_shop_git/build/fluttertoast/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:2:1-14:12
+INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:1-33:12
+	package
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:2:5-34
+		INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:9:5-32:19
+MERGED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:7:5-12:19
+	android:label
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:11:9-32
+	android:icon
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:12:9-43
+	android:name
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:10:9-57
+activity#com.example.baixing.MainActivity
+ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:13:9-31:20
+	android:launchMode
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:15:13-43
+	android:hardwareAccelerated
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:18:13-47
+	android:windowSoftInputMode
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:19:13-55
+	android:configChanges
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:17:13-144
+	android:theme
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:16:13-47
+	android:name
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:14:13-41
+meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
+ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:24:13-26:40
+	android:value
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:26:17-37
+	android:name
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:25:17-82
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:27:13-30:29
+action#android.intent.action.MAIN
+ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:29:27-74
+uses-sdk
+INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+MERGED from [:fluttertoast] /Users/lujunyu/jspang/flutter_shop_git/build/fluttertoast/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /Users/lujunyu/jspang/flutter_shop_git/build/fluttertoast/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:5:5-44
+INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
+activity#io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity
+ADDED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml:9:13-92

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/lujunyu/jspang/flutter_shop_git/build/app/intermediates/res/merged/release/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/lujunyu/jspang/flutter_shop_git/build/app/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/lujunyu/jspang/flutter_shop_git/build/app/intermediates/res/merged/release/drawable_launch_background.xml.flat",
+        "source": "/Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/res/drawable/launch_background.xml"
+    },
+    {
+        "merged": "/Users/lujunyu/jspang/flutter_shop_git/build/app/intermediates/res/merged/release/drawable_toast_bg.xml.flat",
+        "source": "/Users/lujunyu/jspang/flutter_shop_git/build/fluttertoast/intermediates/packaged_res/release/drawable/toast_bg.xml"
+    },
+    {
+        "merged": "/Users/lujunyu/jspang/flutter_shop_git/build/app/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/lujunyu/jspang/flutter_shop_git/build/app/intermediates/res/merged/release/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/lujunyu/jspang/flutter_shop_git/build/app/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    }
+]

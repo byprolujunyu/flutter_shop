@@ -10,8 +10,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
 
 jumpDetail(@required context, @required id) {
-  Application.router.navigateTo(context, '/detail?id=$id',
-      transition: TransitionType.fadeIn);
+  Application.router
+      .navigateTo(context, '/detail?id=$id', transition: TransitionType.fadeIn);
 }
 
 class HomePage extends StatefulWidget {
@@ -71,6 +71,11 @@ class _HomePageState extends State<HomePage>
               List<Map> floor2 = (data['data']['floor2'] as List).cast();
               List<Map> floor3 = (data['data']['floor3'] as List).cast();
 
+              String integralMallPic =
+                  data['data']['integralMallPic']['PICTURE_ADDRESS'];
+              String newUser = data['data']['newUser']['PICTURE_ADDRESS'];
+              String saoma = data['data']['saoma']['PICTURE_ADDRESS'];
+
               return EasyRefresh(
                 //自定义foolter
                 refreshFooter: ClassicsFooter(
@@ -98,6 +103,10 @@ class _HomePageState extends State<HomePage>
                       leaderImage: leaderImage,
                       leaderPhone: leaderPhone,
                     ),
+                    MiddleAd(
+                        saoma: saoma,
+                        integralMallPic: integralMallPic,
+                        newUser: newUser),
                     Recommend(recommendList: recommendList),
                     FloorTitle(picture: floor1Title),
                     FloorContent(floorGoodsList: floor1),
@@ -339,7 +348,7 @@ class Recommend extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-   //   height: ScreenUtil().setHeight(415),
+      //   height: ScreenUtil().setHeight(415),
       margin: EdgeInsets.only(top: 10.0),
       child: Column(
         children: <Widget>[_titleWidget(), _recommedList(context)],
@@ -366,7 +375,7 @@ class Recommend extends StatelessWidget {
   Widget _recommedList(context) {
     return InkWell(
       child: Container(
-       height: ScreenUtil().setHeight(360),
+        height: ScreenUtil().setHeight(360),
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: recommendList.length,
@@ -380,7 +389,7 @@ class Recommend extends StatelessWidget {
 
   Widget _item(context, index) {
     return Container(
-    //  height: ScreenUtil().setHeight(360),
+      //  height: ScreenUtil().setHeight(360),
       width: ScreenUtil().setWidth(250),
       padding: EdgeInsets.all(8.0),
       decoration: BoxDecoration(
@@ -471,5 +480,65 @@ class FloorContent extends StatelessWidget {
         child: Image.network(goods['image']),
       ),
     );
+  }
+}
+
+class MiddleAd extends StatelessWidget {
+  final String saoma;
+
+  final String integralMallPic;
+
+  final String newUser;
+
+  final Function show;
+
+  final Map adaData;
+
+  OverlayEntry ov;
+
+  MiddleAd(
+      {Key key,
+      @required this.saoma,
+      @required this.integralMallPic,
+      @required this.newUser,
+      this.show,
+      this.adaData})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: SingleChildScrollView(
+          physics: new NeverScrollableScrollPhysics(),
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: <Widget>[
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  width: MediaQuery.of(context).size.width / 3,
+                  child: Image.network(saoma),
+                ),
+              ),
+              InkWell(
+                child: Container(
+                  width: MediaQuery.of(context).size.width / 3,
+                  child: Image.network(integralMallPic),
+                ),
+                onTap: () {},
+              ),
+              InkWell(
+                child: Container(
+                  width: MediaQuery.of(context).size.width / 3,
+                  child: Image.network(newUser),
+                ),
+              ),
+            ],
+          )),
+    );
+  }
+
+  void _remove(context) {
+    ov.remove();
   }
 }

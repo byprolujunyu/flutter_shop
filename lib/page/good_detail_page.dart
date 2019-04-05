@@ -1,4 +1,7 @@
 import 'dart:convert';
+import 'package:baixing/page/detail/detail_expand.dart';
+import 'package:baixing/page/detail/detail_tabbar.dart';
+import 'package:baixing/page/detail/detail_web.dart';
 import 'package:baixing/page/detail/detail_widget.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:baixing/model/details.dart';
@@ -32,10 +35,16 @@ class GoodDetailPage extends StatelessWidget {
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return Container(
-                child:Column(
+                child:ListView(
                   children: <Widget>[
                     //关键代码------start
-                    DetailsTopArea(),
+                    D(),
+
+                    DetailsExplain(),
+
+                    DetailsTabbar(),
+
+                   DetailWebDetail(),
                     //关键代码------end
                   ],
                 )
