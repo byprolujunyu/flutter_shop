@@ -8,7 +8,58 @@
   <component name="ChangeListManager">
     <list default="true" id="1c77d51a-d5ce-422d-bf44-4e408ed7de3c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/Flutter.framework/Flutter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/pod_inputs.fingerprint" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/pod_inputs.fingerprint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/snapshot_blob.bin.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/snapshot_blob.bin.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/snapshot_blob.bin.d.fingerprint" beforeDir="false" afterPath="$PROJECT_DIR$/build/snapshot_blob.bin.d.fingerprint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/isolate_snapshot_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/vm_snapshot_data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Flutter.framework/Flutter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/Flutter.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/Flutter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterAppDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterAppDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterBinaryMessenger.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterBinaryMessenger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCallbackCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCallbackCache.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterChannels.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterChannels.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCodecs.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCodecs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterDartProject.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterDartProject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterEngine.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterEngine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterHeadlessDartRunner.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterHeadlessDartRunner.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterMacros.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterMacros.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlatformViews.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlatformViews.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlugin.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlugin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPluginAppLifeCycleDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPluginAppLifeCycleDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterTexture.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterTexture.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterViewController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/fluttertoast/fluttertoast.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/fluttertoast/fluttertoast.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/url_launcher/url_launcher.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/url_launcher/url_launcher.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcuserdata/lujunyu.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcuserdata/lujunyu.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,22 +109,10 @@
       <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
+            <state relative-caret-position="225">
               <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="member_page.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/page/member_page.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="3" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,7 +130,7 @@
       <file leaf-file-name="service_method.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/service/service_method.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="765">
               <caret line="54" column="81" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="81" />
               <folding>
                 <element signature="e#1#31#0" expanded="true" />
@@ -122,15 +161,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category_page.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="category_page.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/page/category_page.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="427">
-              <caret line="347" column="11" lean-forward="true" selection-start-line="328" selection-start-column="11" selection-end-line="347" selection-end-column="11" />
+              <caret line="347" column="11" selection-start-line="328" selection-start-column="11" selection-end-line="347" selection-end-column="11" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Podfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ios/Podfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -165,9 +211,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="644" />
-    <option name="y" value="261" />
+    <option name="y" value="23" />
     <option name="width" value="1163" />
-    <option name="height" value="810" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -199,6 +245,11 @@
               <item name="flutter_shop_git" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_shop_git" type="462c0819:PsiDirectoryNode" />
               <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_shop_git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_shop_git" type="462c0819:PsiDirectoryNode" />
+              <item name="ios" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flutter_shop_git" type="b2602c69:ProjectViewProjectNode" />
@@ -259,8 +310,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,8 +404,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="228" y="23" width="1163" height="810" extended-state="0" />
-    <editor active="true" />
+    <frame x="644" y="23" width="1163" height="984" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -363,13 +413,13 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32867134" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26434195" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3295838" />
       <window_info anchor="right" id="Flutter Outline" order="3" visible="true" weight="0.32917038" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2809991" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2854594" />
       <window_info anchor="right" id="Android WiFi ADB" order="3" weight="0.1088314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -377,11 +427,11 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Flutter Inspector" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32867134" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info id="Captures" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32867134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Captures" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -413,16 +463,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/page/good_detail_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="35" column="35" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/page/home_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -780,7 +820,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/service/service_method.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="765">
           <caret line="54" column="81" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="81" />
           <folding>
             <element signature="e#1#31#0" expanded="true" />
@@ -808,7 +848,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
+        <state relative-caret-position="225">
           <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
@@ -816,14 +856,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/one.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/page/category_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
-          <caret line="347" column="11" lean-forward="true" selection-start-line="328" selection-start-column="11" selection-end-line="347" selection-end-column="11" />
+          <caret line="347" column="11" selection-start-line="328" selection-start-column="11" selection-end-line="347" selection-end-column="11" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state />
       </provider>
     </entry>
   </component>
