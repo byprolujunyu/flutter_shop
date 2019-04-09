@@ -1,10 +1,27 @@
+import 'package:baixing/page/detail/detail_num.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
 import 'package:provide/provide.dart';
-class CountWidget extends StatelessWidget {
+
+class CountWidget extends StatefulWidget {
   final goodDetail;
 
   CountWidget({this.goodDetail});
+
+  @override
+  _CountWidgetState createState() => _CountWidgetState();
+}
+
+class _CountWidgetState extends State<CountWidget> {
+  bool flag = true;
+
+  @override
+  void initState() {
+    setState(() {
+      flag = true;
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +69,19 @@ class CountWidget extends StatelessWidget {
           Expanded(
             flex: 7,
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                showModalBottomSheet(
+                  context: context,
+                  builder: (_) => NumCountWidget(
+                        remove: (context) {
+                          setState(() {
+                            flag = false;
+                          });
+                          Navigator.pop(context);
+                        },
+                      ),
+                );
+              },
               child: Container(
                 height: ScreenUtil().setHeight(100),
                 color: Colors.green,
