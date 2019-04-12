@@ -1,10 +1,15 @@
+import 'package:baixing/model/details.dart';
+import 'package:baixing/provider/cart_provide.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provide/provide.dart';
 
 class NumCountWidget extends StatefulWidget {
   final Function(BuildContext context) remove;
 
-  NumCountWidget({@required this.remove});
+  final DetailsModel detailModel;
+
+  NumCountWidget({@required this.remove, this.detailModel});
 
   @override
   _NumCountWidgetState createState() => _NumCountWidgetState();
@@ -98,21 +103,31 @@ class _NumCountWidgetState extends State<NumCountWidget> {
                             ),
                           ),
                         ),
-                        Container(
-                          margin: EdgeInsets.only(left: 5),
-                          height: ScreenUtil().setHeight(50),
-                          width: ScreenUtil().setWidth(300),
-                          alignment: Alignment.center,
-                          child: Text(
-                            '确定加入购物车',
-                            style: TextStyle(color: Colors.white),
+                        GestureDetector(
+                          child: Container(
+                            margin: EdgeInsets.only(left: 5),
+                            height: ScreenUtil().setHeight(50),
+                            width: ScreenUtil().setWidth(300),
+                            alignment: Alignment.center,
+                            child: Text(
+                              '确定加入购物车',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            decoration: BoxDecoration(
+                              color: Colors.green,
+                              borderRadius: BorderRadius.circular(5),
+                            ),
                           ),
-                          decoration: BoxDecoration(
-                            color: Colors.green,
-                            borderRadius: BorderRadius.circular(5),
-                          ),
+                          onTap: ()  {
+                            var goodInfo = widget.detailModel.data.goodInfo;
+                             Provide.value<CartProvide>(context).save(
+                                goodInfo.goodsId,
+                                goodInfo.goodsName,
+                                count,
+                                goodInfo.oriPrice,
+                                goodInfo.image1);
+                          },
                         ),
-                        Container(),
                       ],
                     ),
                   ),

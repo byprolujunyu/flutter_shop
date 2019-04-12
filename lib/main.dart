@@ -1,3 +1,4 @@
+import 'package:baixing/provider/cart_provide.dart';
 import 'package:baixing/routers/application.dart';
 import 'package:baixing/routers/routers.dart';
 import 'package:flutter/material.dart';
@@ -15,10 +16,12 @@ void main() {
   var childcategory = ChildCategory();
   var providers = Providers();
   var categoryGoodsList = CategoryGoodsProvide();
+  var cartProvide = CartProvide();
   providers
     ..provide(Provider<Counter>.value(counter))
     ..provide(Provider<ChildCategory>.value(childcategory))
     ..provide(Provider<DetailsInfoProvide>.value(detailsInfoProvide))
+    ..provide(Provider<CartProvide>.value(cartProvide))
     ..provide(Provider<CategoryGoodsProvide>.value(categoryGoodsList));
 
   runApp(ProviderNode(

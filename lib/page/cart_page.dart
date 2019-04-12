@@ -1,60 +1,42 @@
+import 'package:baixing/page/cart/cart_widget.dart';
+import 'package:baixing/provider/cart_provide.dart';
+import 'package:baixing/widget/loading_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provide/provide.dart';
 
 import '../provider/counter.dart';
 
+class CartPage extends StatefulWidget {
+  @override
+  _CartPageState createState() => _CartPageState();
+}
 
-class CartPage extends StatelessWidget {
-  final Widget child;
-
-  CartPage({Key key, this.child}) : super(key: key);
-
+class _CartPageState extends State<CartPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Container(
-          child: Column(
-            children: <Widget>[
-              Number(),
-              MyButton()
-            ],
-          ),
-        )
-      )
+      appBar: AppBar(),
+      body: FutureBuilder(
+          future: _getBackInfo(context),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              return Container(
+                child: Column(
+                  children: <Widget>[
+                    CartWidget(),
+                  ],
+                ),
+              );
+            } else {
+              return Center(child: Loading());
+            }
+          }),
     );
   }
-}
 
+  Future _getBackInfo(BuildContext context) async {
+    await Provide.value<CartProvide>(context).getCartInfo();
+    return '完成加载';
 
-class Number extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(
-        bottom: 20
-      ),
-      child: Provide<Counter>(
-        builder: ( context, child, counter ){
-          return Text("${ counter.value }");
-        },
-      ),
-    );
   }
 }
-
-
-class MyButton extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: RaisedButton(
-        child: Text("增加"),
-        onPressed: (){
-          Provide.value<Counter>(context).increment();
-        },
-      ),
-    );
-  }
-}
-

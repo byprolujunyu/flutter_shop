@@ -10,7 +10,7 @@ class DetailWebDetail extends StatelessWidget {
   Widget build(BuildContext context) {
     var goodsDetail = Provide.value<DetailsInfoProvide>(context).goodsInfo.data.goodInfo.goodsDetail;
     var goodsPic = Provide.value<DetailsInfoProvide>(context).goodsInfo.data.advertesPicture.pICTUREADDRESS;
-    print(goodsPic);
+   // print(goodsPic);
     return Container(
       child:SingleChildScrollView(child:  Column(
         children: <Widget>[

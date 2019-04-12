@@ -9,7 +9,7 @@ import '../config/service_url.dart';
 //获取首页主题内容
 Future getHomePageContent() async{
   try {
-    print("开始获取数据.....");
+  //  print("开始获取数据.....");
     Response response;
     Dio dio =new Dio();
     dio.options.contentType = ContentType.parse("application/x-www-form-urlencoded");
@@ -29,7 +29,7 @@ Future getHomePageContent() async{
 //获取火爆专区数据
 Future getHomePageBeloCenten() async{
   try {
-    print("开始获取数据.....");
+//    print("开始获取数据.....");
     Response response;
     Dio dio =new Dio();
     dio.options.contentType = ContentType.parse("application/x-www-form-urlencoded");
@@ -49,7 +49,7 @@ Future getHomePageBeloCenten() async{
 // 通用方法
 Future request( url, { formData } ) async {
   try {
-    print("开始获取数据.....");
+ //   print("开始获取数据.....");
     Response response;
     Dio dio = Dio();
     dio.options.contentType =ContentType.parse("application/x-www-form-urlencoded");
