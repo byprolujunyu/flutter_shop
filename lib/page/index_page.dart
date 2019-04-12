@@ -11,8 +11,11 @@ import 'category_page.dart';
 
 class IndexPage extends StatefulWidget {
   final Widget child;
+  int index = 0;
+  int item = 0;
 
-  IndexPage({Key key, this.child}) : super(key: key);
+
+  IndexPage({Key key, this.child,this.index=0,this.item=0}) : super(key: key);
 
   _IndexPageState createState() => _IndexPageState();
 }
@@ -51,6 +54,7 @@ class _IndexPageState extends State<IndexPage> {
   @override
   void initState() {
     // currentPage =tabBodies[currentIndex];
+    currentIndex = widget.index;
     super.initState();
   }
 

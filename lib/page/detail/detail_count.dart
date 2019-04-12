@@ -1,5 +1,6 @@
 import 'package:baixing/model/details.dart';
 import 'package:baixing/page/detail/detail_num.dart';
+import 'package:baixing/page/index_page.dart';
 import 'package:baixing/provider/goods_info.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
@@ -42,10 +43,17 @@ class _CountWidgetState extends State<CountWidget> {
                   alignment: Alignment.center,
                   child: Stack(
                     children: <Widget>[
-                      Container(
-                        height: ScreenUtil().setHeight(50),
-                        width: ScreenUtil().setWidth(50),
-                        child: Image.asset('img/icon_detai;_page_cart.png'),
+                      GestureDetector(
+                        child: Container(
+                          height: ScreenUtil().setHeight(50),
+                          width: ScreenUtil().setWidth(50),
+                          child: Image.asset('img/icon_detai;_page_cart.png'),
+                        ),
+                        onTap: (){
+                          Navigator.of(context).pushAndRemoveUntil(
+                              MaterialPageRoute(builder: (context) => IndexPage(index: 2,)),
+                                  (route) => route == null);
+                        },
                       ),
                       Container(
                         alignment: Alignment.center,
@@ -83,8 +91,7 @@ class _CountWidgetState extends State<CountWidget> {
                             });
                             Navigator.pop(context);
                           },
-
-                      detailModel: goodsInfo,
+                          detailModel: goodsInfo,
                         ),
                   );
                 },

@@ -21,11 +21,8 @@ class _CartPageState extends State<CartPage> {
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               return Container(
-                child: Column(
-                  children: <Widget>[
+                child:
                     CartWidget(),
-                  ],
-                ),
               );
             } else {
               return Center(child: Loading());

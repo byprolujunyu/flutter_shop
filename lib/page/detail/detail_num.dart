@@ -126,6 +126,7 @@ class _NumCountWidgetState extends State<NumCountWidget> {
                                 count,
                                 goodInfo.oriPrice,
                                 goodInfo.image1);
+                             Navigator.pop(context);
                           },
                         ),
                       ],

@@ -16,7 +16,7 @@ class CartWidget extends StatefulWidget {
 class _CartWidgetState extends State<CartWidget> {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Provide<CartProvide>(builder: (context, child, val) {
+    return Provide<CartProvide>(builder: (context, child, val) {
       var cartInfo = val.cartDatas;
       var model = fromJson(cartInfo);
       print(cartInfo);
@@ -30,14 +30,14 @@ class _CartWidgetState extends State<CartWidget> {
                     child: Column(
                       children: <Widget>[
                         L(model),
-                        CartBottomWidget(model),
+                       CartBottomWidget(model),
                       ],
                     ),
                   );
       } else {
         return Container();
       }
-    }));
+    });
   }
 
   CartListModelNew fromJson(List list) {
@@ -67,26 +67,71 @@ class L extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScopedModelDescendant<CartListModelNew>(
+    return Container(
+      child: ScopedModelDescendant<CartListModelNew>(
         builder: (context, child, model) {
-      this.model = model;
-      return Container(
-        height: MediaQuery.of(context).size.height / 1.4,
-        child: ListView.builder(
-          itemExtent: 93,
-          itemCount: model.itemsCount,
-          itemBuilder: (context, index) {
-            return item(context, model.items[index], index);
-          },
-        ),
-      );
-    });
+          this.model = model;
+          int index = 0;
+          return Expanded(child: ListView.builder(
+            shrinkWrap: true,
+            padding: EdgeInsets.all(0),
+            itemExtent: 93,
+            itemCount: model.itemsCount,
+            itemBuilder: (context, index) {
+              return CartItemWidget(model.items[index],
+                  addCount: _addCount,
+                  downCount: _downCount,
+                  index: index,
+                  refresh: () {},
+                  switchChaned: _switchChanged);
+            },
+
+//              Wrap(
+//        children: model.items.map((val) {
+//          index++;
+//          return item(context, val, index);
+//        }).toList(),
+          ));
+        },
+      ),
+    );
   }
 
   CartItemModelNew data;
 
-  Widget item(BuildContext context, CartItemModelNew item, int index) {
-    this.data = item;
+  _switchChanged(int i) {
+    model.switchSelect(i);
+  }
+
+  _addCount(int i) {
+    model.addCount(i);
+  }
+
+  _downCount(int i) {
+    model.downCount(i);
+  }
+}
+
+class CartItemWidget extends StatelessWidget {
+  final CartItemModelNew data;
+  final int index;
+  final Function(int i) switchChaned;
+  final Function(int i) addCount;
+  final Function(int i) downCount;
+  final BuildContext context;
+  final Function refresh;
+
+  CartItemWidget(this.data,
+      {this.switchChaned,
+      this.index,
+      this.addCount,
+      this.downCount,
+      this.context,
+      this.refresh});
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
     return Container(
       padding: EdgeInsets.all(8),
       width: MediaQuery.of(context).size.width,
@@ -100,12 +145,12 @@ class L extends StatelessWidget {
               Container(
                 margin: EdgeInsets.all(5),
                 child: InkWell(
-                  onTap: () => _switchChanged(index),
+                  onTap: () => switchChaned(index),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        item.isSelected
+                        data.isSelected
                             ? Icons.check_circle_outline
                             : Icons.radio_button_unchecked,
                         color: KColorConstant.themeColor,
@@ -116,7 +161,7 @@ class L extends StatelessWidget {
               ),
               Container(
                 child: Image.network(
-                  item.imageUrl,
+                  data.imageUrl,
                   width: ScreenUtil().setWidth(120),
                   height: ScreenUtil().setWidth(200),
                 ),
@@ -139,7 +184,7 @@ class L extends StatelessWidget {
                       Container(
                         width: ScreenUtil().setWidth(350),
                         margin: EdgeInsets.only(left: 5),
-                        child: Text(item.productName),
+                        child: Text(data.productName),
                       ),
                     ],
                   ),
@@ -149,7 +194,7 @@ class L extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[
                         GestureDetector(
-                          onTap: () => item.count > 1 && _downCount(index),
+                          onTap: () => data.count > 1 && downCount(index),
                           child: Container(
                             width: ScreenUtil().setWidth(50),
                             height: ScreenUtil().setWidth(50),
@@ -168,7 +213,7 @@ class L extends StatelessWidget {
                                     color: KColorConstant.cartItemCountTxtColor,
                                     width: 1)),
                             child: Text(
-                              item.count.toString(),
+                              data.count.toString(),
                               style: TextStyle(
                                   fontSize: 13,
                                   fontWeight: FontWeight.bold,
@@ -176,7 +221,7 @@ class L extends StatelessWidget {
                             )),
                         GestureDetector(
                           onTap: () =>
-                              item.count < item.buyLimit && _addCount(index),
+                              data.count < data.buyLimit && addCount(index),
                           child: Container(
                             alignment: Alignment.center,
                             width: ScreenUtil().setWidth(50),
@@ -194,15 +239,14 @@ class L extends StatelessWidget {
             ],
           ),
           Container(
-            margin: EdgeInsets.only(right: 3),
+              margin: EdgeInsets.only(right: 3),
               child: Column(
-
-            children: <Widget>[
-              Container(
-                child: Text('¥ ${item.price}0'),
-              )
-            ],
-          )),
+                children: <Widget>[
+                  Container(
+                    child: Text('¥ ${data.price}0'),
+                  )
+                ],
+              )),
         ],
       ),
     );
@@ -232,18 +276,6 @@ class L extends StatelessWidget {
     return data.count >= data.buyLimit
         ? KColorConstant.cartDisableColor
         : KColorConstant.cartItemCountTxtColor;
-  }
-
-  _switchChanged(int i) {
-    model.switchSelect(i);
-  }
-
-  _addCount(int i) {
-    model.addCount(i);
-  }
-
-  _downCount(int i) {
-    model.downCount(i);
   }
 }
 
