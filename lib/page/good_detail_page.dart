@@ -4,6 +4,7 @@ import 'package:baixing/page/detail/detail_expand.dart';
 import 'package:baixing/page/detail/detail_tabbar.dart';
 import 'package:baixing/page/detail/detail_web.dart';
 import 'package:baixing/page/detail/detail_widget.dart';
+import 'package:baixing/provider/cart_provide.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:baixing/model/details.dart';
 import 'package:baixing/provider/goods_info.dart';
@@ -20,6 +21,7 @@ class GoodDetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Provide.value<CartProvide>(context).getCartNum();
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(

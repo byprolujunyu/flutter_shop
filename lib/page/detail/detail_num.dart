@@ -120,6 +120,7 @@ class _NumCountWidgetState extends State<NumCountWidget> {
                           ),
                           onTap: ()  async{
                             var goodInfo = widget.detailModel.data.goodInfo;
+                            Provide.value<CartProvide>(context).getCartNum();
                             await Provide.value<CartProvide>(context).save(
                                 goodInfo.goodsId,
                                 goodInfo.goodsName,

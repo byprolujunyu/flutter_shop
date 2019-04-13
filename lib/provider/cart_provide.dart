@@ -6,6 +6,7 @@ import '../model/cart_info_model.dart';
 class CartProvide with ChangeNotifier {
   String cartString = "[]";
   List<CartInfoModel> cartDatas = [];
+  int num = 0;
 
   static final String cartKey = 'cartInfo';
 
@@ -81,7 +82,6 @@ class CartProvide with ChangeNotifier {
       }
 
       print(tempList);
-
     });
 
     cartString = json.encode(tempList).toString();
@@ -101,6 +101,19 @@ class CartProvide with ChangeNotifier {
     tempList.forEach((item) {
       cartDatas.add(CartInfoModel.fromJson(item));
     });
+    notifyListeners();
+  }
+
+  getCartNum() async{
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+   // cartDatas.clear();
+    cartString = prefs.getString(cartKey); //获取持久化存储的值
+
+    //如果有值进行decode操作
+    var temp = cartString == null ? [] : json.decode(cartString.toString());
+    //把获得值转变成List
+    List<Map> tempList = (temp as List).cast();
+    num = tempList.length;
     notifyListeners();
   }
 }

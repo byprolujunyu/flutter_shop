@@ -1,6 +1,7 @@
 import 'package:baixing/model/details.dart';
 import 'package:baixing/page/detail/detail_num.dart';
 import 'package:baixing/page/index_page.dart';
+import 'package:baixing/provider/cart_provide.dart';
 import 'package:baixing/provider/goods_info.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
@@ -17,17 +18,23 @@ class CountWidget extends StatefulWidget {
 
 class _CountWidgetState extends State<CountWidget> {
   bool flag = true;
-
+int num = 0;
   @override
   void initState() {
     setState(() {
       flag = true;
     });
+    getNum();
     super.initState();
+  }
+
+  void getNum() async{
+    await Provide.value<CartProvide>(context).getCartNum();
   }
 
   @override
   Widget build(BuildContext context) {
+    var num = Provide.value<CartProvide>(context).num;
     return Provide<DetailsInfoProvide>(builder: (context, child, val) {
       DetailsModel goodsInfo = val.goodsInfo;
       return Container(
@@ -47,7 +54,7 @@ class _CountWidgetState extends State<CountWidget> {
                         child: Container(
                           height: ScreenUtil().setHeight(50),
                           width: ScreenUtil().setWidth(50),
-                          child: Image.asset('img/icon_detai;_page_cart.png'),
+                          child: Image.asset('img/cart_icon.png'),
                         ),
                         onTap: (){
 
@@ -58,9 +65,9 @@ class _CountWidgetState extends State<CountWidget> {
                         width: ScreenUtil().setWidth(30),
                         height: ScreenUtil().setHeight(30),
                         child: Text(
-                          '99',
+                          '$num',
                           style: TextStyle(
-                            fontSize: ScreenUtil().setSp(10),
+                            fontSize: ScreenUtil().setSp(20),
                             color: Colors.white,
                           ),
                         ),
