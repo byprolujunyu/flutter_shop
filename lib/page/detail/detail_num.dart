@@ -7,9 +7,11 @@ import 'package:provide/provide.dart';
 class NumCountWidget extends StatefulWidget {
   final Function(BuildContext context) remove;
 
+  final Function(BuildContext context) refresh;
+
   final DetailsModel detailModel;
 
-  NumCountWidget({@required this.remove, this.detailModel});
+  NumCountWidget({@required this.remove, this.detailModel, this.refresh});
 
   @override
   _NumCountWidgetState createState() => _NumCountWidgetState();
@@ -118,16 +120,16 @@ class _NumCountWidgetState extends State<NumCountWidget> {
                               borderRadius: BorderRadius.circular(5),
                             ),
                           ),
-                          onTap: ()  async{
+                          onTap: () async {
                             var goodInfo = widget.detailModel.data.goodInfo;
-                            Provide.value<CartProvide>(context).getCartNum();
                             await Provide.value<CartProvide>(context).save(
                                 goodInfo.goodsId,
                                 goodInfo.goodsName,
                                 count,
                                 goodInfo.presentPrice,
                                 goodInfo.image1);
-                             Navigator.pop(context);
+                            widget.refresh(context);
+                            Navigator.pop(context);
                           },
                         ),
                       ],

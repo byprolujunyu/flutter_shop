@@ -18,7 +18,8 @@ class CountWidget extends StatefulWidget {
 
 class _CountWidgetState extends State<CountWidget> {
   bool flag = true;
-int num = 0;
+  int num = 0;
+
   @override
   void initState() {
     setState(() {
@@ -28,13 +29,12 @@ int num = 0;
     super.initState();
   }
 
-  void getNum() async{
+  void getNum() async {
     await Provide.value<CartProvide>(context).getCartNum();
   }
 
   @override
   Widget build(BuildContext context) {
-    var num = Provide.value<CartProvide>(context).num;
     return Provide<DetailsInfoProvide>(builder: (context, child, val) {
       DetailsModel goodsInfo = val.goodsInfo;
       return Container(
@@ -48,42 +48,47 @@ int num = 0;
                 child: Container(
                   color: Colors.white,
                   alignment: Alignment.center,
-                  child: GestureDetector(child: Stack(
-                    children: <Widget>[
-                      GestureDetector(
-                        child: Container(
-                          height: ScreenUtil().setHeight(50),
-                          width: ScreenUtil().setWidth(50),
-                          child: Image.asset('img/cart_icon.png'),
+                  child: GestureDetector(
+                    child: Stack(
+                      children: <Widget>[
+                        GestureDetector(
+                          child: Container(
+                            height: ScreenUtil().setHeight(50),
+                            width: ScreenUtil().setWidth(50),
+                            child: Image.asset('img/cart_icon.png'),
+                          ),
+                          onTap: () {},
                         ),
-                        onTap: (){
-
-                        },
-                      ),
-                      Container(
-                        alignment: Alignment.center,
-                        width: ScreenUtil().setWidth(30),
-                        height: ScreenUtil().setHeight(30),
-                        child: Text(
-                          '$num',
-                          style: TextStyle(
-                            fontSize: ScreenUtil().setSp(20),
-                            color: Colors.white,
+                        Container(
+                          alignment: Alignment.center,
+                          width: ScreenUtil().setWidth(30),
+                          height: ScreenUtil().setHeight(30),
+                          child: Provide<CartProvide>(builder: (context,child,val){
+                           return Text(
+                              '${val.num}',
+                              style: TextStyle(
+                                fontSize: ScreenUtil().setSp(20),
+                                color: Colors.white,
+                              ),
+                            );
+                          }),
+                          decoration: BoxDecoration(
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(100),
                           ),
                         ),
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.circular(100),
-                        ),
-                      ),
-                    ],
-                    alignment: FractionalOffset(0.999, 0.001),
+                      ],
+                      alignment: FractionalOffset(0.999, 0.001),
+                    ),
                   ),
-                ),),
+                ),
                 onTap: () {
                   Navigator.of(context).pushAndRemoveUntil(
-                      MaterialPageRoute(builder: (context) => IndexPage(index: 2,)),
-                          (route) => route == null);
+                      MaterialPageRoute(
+                          builder: (context) => IndexPage(
+                                index: 2,
+                              )),
+                      (route) => route == null);
                 },
               ),
             ),
@@ -101,6 +106,9 @@ int num = 0;
                             Navigator.pop(context);
                           },
                           detailModel: goodsInfo,
+                          refresh: (context) {
+                            Provide.value<CartProvide>(context).getCartNum();
+                          },
                         ),
                   );
                 },

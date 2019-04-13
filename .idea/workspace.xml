@@ -7,51 +7,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c77d51a-d5ce-422d-bf44-4e408ed7de3c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/img/cart_icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/aot/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/aot/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/aot/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/aot/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/aot/arm64/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/aot/arm64/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/aot/arm64/snapshot.d.fingerprint" beforeDir="false" afterPath="$PROJECT_DIR$/build/aot/arm64/snapshot.d.fingerprint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/aot/arm64/snapshot_assembly.S" beforeDir="false" afterPath="$PROJECT_DIR$/build/aot/arm64/snapshot_assembly.S" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/aot/arm64/snapshot_assembly.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/aot/arm64/snapshot_assembly.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/aot/armv7/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/aot/armv7/App.framework/App" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/aot/armv7/snapshot.d.fingerprint" beforeDir="false" afterPath="$PROJECT_DIR$/build/aot/armv7/snapshot.d.fingerprint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/aot/armv7/snapshot_assembly.S" beforeDir="false" afterPath="$PROJECT_DIR$/build/aot/armv7/snapshot_assembly.S" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/aot/armv7/snapshot_assembly.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/aot/armv7/snapshot_assembly.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/aot/kernel_compile.d.fingerprint" beforeDir="false" afterPath="$PROJECT_DIR$/build/aot/kernel_compile.d.fingerprint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/app.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/app.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/app.dill.track.dill.incremental.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/app.dill.track.dill.incremental.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app.dSYM/Contents/Resources/DWARF/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app.dSYM/Contents/Resources/DWARF/Runner" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dSYMs.noindex/App.framework.dSYM/Contents/Resources/DWARF/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/dSYMs.noindex/App.framework.dSYM/Contents/Resources/DWARF/App" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/Runner" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Release-iphoneos/libPods-Runner.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Release-iphoneos/libPods-Runner.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/App" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/App.framework/flutter_assets/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/Runner" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphoneos/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/AssetManifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/ios/pod_inputs.fingerprint" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/pod_inputs.fingerprint" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/snapshot_blob.bin.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/snapshot_blob.bin.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/snapshot_blob.bin.d.fingerprint" beforeDir="false" afterPath="$PROJECT_DIR$/build/snapshot_blob.bin.d.fingerprint" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/AssetManifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/AssetManifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Flutter/Generated.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/Flutter.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/Flutter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterAppDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterAppDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterBinaryMessenger.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterBinaryMessenger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCallbackCache.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCallbackCache.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterChannels.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterChannels.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCodecs.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterCodecs.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterDartProject.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterDartProject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterEngine.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterEngine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterHeadlessDartRunner.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterHeadlessDartRunner.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterMacros.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterMacros.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlatformViews.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlatformViews.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlugin.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPlugin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPluginAppLifeCycleDelegate.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterPluginAppLifeCycleDelegate.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterTexture.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterTexture.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterViewController.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Headers/Public/Flutter/Flutter/FlutterViewController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Manifest.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Manifest.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/fluttertoast/fluttertoast.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/fluttertoast/fluttertoast.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/shared_preferences/shared_preferences.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/shared_preferences/shared_preferences.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Pods/Target Support Files/url_launcher/url_launcher.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Pods/Target Support Files/url_launcher/url_launcher.xcconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcuserdata/lujunyu.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Runner.xcworkspace/xcuserdata/lujunyu.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/page/detail/detail_count.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/page/detail/detail_count.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/page/detail/detail_num.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/page/detail/detail_num.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/page/good_detail_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/page/good_detail_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/provider/cart_provide.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/provider/cart_provide.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,11 +78,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="detail_count.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="detail_count.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_count.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+            <state relative-caret-position="356">
+              <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -74,11 +90,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail_num.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Podfile.lock" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ios/Podfile.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail_num.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_num.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+            <state relative-caret-position="106">
+              <caret line="94" column="63" lean-forward="true" selection-start-line="94" selection-start-column="63" selection-end-line="94" selection-end-column="63" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -89,8 +114,32 @@
       <file leaf-file-name="good_detail_page.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/page/good_detail_page.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+            <state relative-caret-position="46">
+              <caret line="23" column="53" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail_web.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_web.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="139">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail_command.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_command.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +154,8 @@
       <file leaf-file-name="cart_provide.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/provider/cart_provide.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="116" column="4" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
+            <state relative-caret-position="523">
+              <caret line="118" column="1" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -115,7 +164,7 @@
         <entry file="file://$PROJECT_DIR$/lib/page/cart/cart_widget.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="78">
-              <caret line="251" column="26" lean-forward="true" selection-start-line="251" selection-start-column="26" selection-end-line="251" selection-end-column="26" />
+              <caret line="251" column="26" selection-start-line="251" selection-start-column="26" selection-end-line="251" selection-end-column="26" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -156,8 +205,8 @@
         <option value="$PROJECT_DIR$/lib/page/cart/cart_widget.dart" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/provider/cart_provide.dart" />
-        <option value="$PROJECT_DIR$/lib/page/detail/detail_num.dart" />
         <option value="$PROJECT_DIR$/lib/page/good_detail_page.dart" />
+        <option value="$PROJECT_DIR$/lib/page/detail/detail_num.dart" />
         <option value="$PROJECT_DIR$/lib/page/detail/detail_count.dart" />
       </list>
     </option>
@@ -355,7 +404,7 @@
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32763532" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.26353276" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4017094" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4017094" />
       <window_info anchor="right" id="Flutter Outline" order="3" visible="true" weight="0.14893617" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -363,7 +412,7 @@
       <window_info anchor="right" id="Android WiFi ADB" order="3" weight="0.1088314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3888889" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3888889" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Flutter Inspector" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -381,23 +430,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/page/detail/detail_command.dart</url>
-          <line>19</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/provider/cart_provide.dart</url>
-          <line>107</line>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/lib/provider/cart_provide.dart</url>
-          <line>116</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="dart-exception">
           <properties />
@@ -407,13 +439,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/page/good_detail_page.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/config/service_url.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -486,16 +511,6 @@
     <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_command.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/provider/counter.dart">
@@ -582,16 +597,6 @@
           <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_web.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -702,17 +707,10 @@
     <entry file="file://$PROJECT_DIR$/lib/page/cart/cart_widget.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
-          <caret line="251" column="26" lean-forward="true" selection-start-line="251" selection-start-column="26" selection-end-line="251" selection-end-column="26" />
+          <caret line="251" column="26" selection-start-line="251" selection-start-column="26" selection-end-line="251" selection-end-column="26" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/provider/cart_provide.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="116" column="4" selection-start-line="116" selection-start-column="4" selection-end-line="116" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -721,27 +719,61 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/page/good_detail_page.dart">
+    <entry file="file://$PROJECT_DIR$/lib/provider/cart_provide.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        <state relative-caret-position="523">
+          <caret line="118" column="1" selection-start-line="118" selection-start-column="1" selection-end-line="118" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_num.dart">
+    <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_count.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
+        <state relative-caret-position="356">
+          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_count.dart">
+    <entry file="file://$PROJECT_DIR$/ios/Podfile.lock">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        <state relative-caret-position="44">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/page/good_detail_page.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_web.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_command.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/page/detail/detail_num.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="94" column="63" lean-forward="true" selection-start-line="94" selection-start-column="63" selection-end-line="94" selection-end-column="63" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>

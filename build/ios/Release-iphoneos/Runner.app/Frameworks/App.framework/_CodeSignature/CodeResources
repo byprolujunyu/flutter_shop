@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		prd/NZybK56UwPS6numlqd1dAYA=
+		/I9VwMpGdU30Jl05JU6c23v4IcE=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -27,6 +27,10 @@
 		<key>flutter_assets/img/cart_bin.png</key>
 		<data>
 		YjiNESijflJRy1z/jtABNvJNgb4=
+		</data>
+		<key>flutter_assets/img/cart_icon.png</key>
+		<data>
+		Wh91+sM9TpCLF4kysXhOOFttzto=
 		</data>
 		<key>flutter_assets/img/close.png</key>
 		<data>
@@ -47,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			prd/NZybK56UwPS6numlqd1dAYA=
+			/I9VwMpGdU30Jl05JU6c23v4IcE=
 			</data>
 			<key>hash2</key>
 			<data>
-			i6OnyzOo72sbQfqO8AxnvA6eXBSHHgc9huhAKpvGi08=
+			ERzZFxcAdOsdHp+sohHShJIFSRk0h2rHQ0njImruuEc=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -96,6 +100,17 @@
 			<key>hash2</key>
 			<data>
 			VONDwBRw7UvxJhBMzs21Y2/u+sIz9y4k2MqMsJj0Hrw=
+			</data>
+		</dict>
+		<key>flutter_assets/img/cart_icon.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wh91+sM9TpCLF4kysXhOOFttzto=
+			</data>
+			<key>hash2</key>
+			<data>
+			QiY5Nvttu+Lwmx/IuIiSO/J8NrxNHJjelCPvycUbdLk=
 			</data>
 		</dict>
 		<key>flutter_assets/img/close.png</key>
