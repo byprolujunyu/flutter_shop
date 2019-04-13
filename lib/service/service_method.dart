@@ -3,6 +3,7 @@ import 'package:dio/dio.dart';
 import 'dart:async';
 import 'dart:io';
 import '../config/service_url.dart';
+import 'package:flutter/material.dart';
 
 
 
@@ -67,6 +68,33 @@ Future request( url, { formData } ) async {
   } catch (e) {
     return print("------出错了------------>>>>>${e}");
   }
+}
+
+void showDialogC(context,str,Function run){
+  showDialog<Null>(
+    context: context,
+    barrierDismissible: false,
+    builder: (BuildContext context) {
+      return new AlertDialog(
+        title: new Text('$str'),
+        actions: <Widget>[
+          new FlatButton(
+            child: new Text('确定'),
+            onPressed: () {
+             run();
+              Navigator.pop(context);
+            },
+          ),
+          new FlatButton(
+            child: new Text('取消'),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+        ],
+      );
+    },
+  ).then((val) {});
 }
 
 

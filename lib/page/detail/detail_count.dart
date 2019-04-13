@@ -41,7 +41,7 @@ class _CountWidgetState extends State<CountWidget> {
                 child: Container(
                   color: Colors.white,
                   alignment: Alignment.center,
-                  child: Stack(
+                  child: GestureDetector(child: Stack(
                     children: <Widget>[
                       GestureDetector(
                         child: Container(
@@ -50,9 +50,7 @@ class _CountWidgetState extends State<CountWidget> {
                           child: Image.asset('img/icon_detai;_page_cart.png'),
                         ),
                         onTap: (){
-                          Navigator.of(context).pushAndRemoveUntil(
-                              MaterialPageRoute(builder: (context) => IndexPage(index: 2,)),
-                                  (route) => route == null);
+
                         },
                       ),
                       Container(
@@ -74,8 +72,12 @@ class _CountWidgetState extends State<CountWidget> {
                     ],
                     alignment: FractionalOffset(0.999, 0.001),
                   ),
-                ),
-                onTap: () {},
+                ),),
+                onTap: () {
+                  Navigator.of(context).pushAndRemoveUntil(
+                      MaterialPageRoute(builder: (context) => IndexPage(index: 2,)),
+                          (route) => route == null);
+                },
               ),
             ),
             Expanded(

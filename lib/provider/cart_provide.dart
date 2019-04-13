@@ -7,7 +7,7 @@ class CartProvide with ChangeNotifier {
   String cartString = "[]";
   List<CartInfoModel> cartDatas = [];
 
- static final String cartKey = 'cartInfo';
+  static final String cartKey = 'cartInfo';
 
   save(goodsId, goodsName, count, price, images) async {
     //初始化SharedPreferences
@@ -63,6 +63,29 @@ class CartProvide with ChangeNotifier {
     prefs.remove(cartKey);
     cartDatas.clear();
     print('清空完成-----------------');
+    notifyListeners();
+  }
+
+  removeById(String id) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    cartString = prefs.getString(cartKey); //获取持久化存储的值
+    var temp = cartString == null ? [] : json.decode(cartString.toString());
+    //把获得值转变成List
+    List<Map> tempList = (temp as List).cast();
+    tempList.forEach((item) {
+      try {
+        cartDatas.removeWhere((item) => item.goodsId == id);
+        tempList.removeWhere((map) => map['goodsId'] == id);
+      } catch (e) {
+        print(e);
+      }
+
+      print(tempList);
+
+    });
+
+    cartString = json.encode(tempList).toString();
+    prefs.setString(cartKey, cartString); //进行持久化
     notifyListeners();
   }
 

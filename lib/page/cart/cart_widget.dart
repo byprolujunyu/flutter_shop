@@ -1,14 +1,20 @@
 import 'package:baixing/constants/index.dart';
 import 'package:baixing/model/cart_info_model.dart';
 import 'package:baixing/model/cart_new.dart';
+import 'package:baixing/page/index_page.dart';
 import 'package:baixing/provider/cart_provide.dart';
 import 'package:baixing/widget/loading_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provide/provide.dart';
 import 'package:scoped_model/scoped_model.dart';
+import '../../service/service_method.dart';
 
 class CartWidget extends StatefulWidget {
+  final Function refresh;
+
+  CartWidget(this.refresh);
+
   @override
   _CartWidgetState createState() => _CartWidgetState();
 }
@@ -29,8 +35,8 @@ class _CartWidgetState extends State<CartWidget> {
                     model: model,
                     child: Column(
                       children: <Widget>[
-                        L(model),
-                       CartBottomWidget(model),
+                        L(model, refresh: widget.refresh),
+                        CartBottomWidget(model),
                       ],
                     ),
                   );
@@ -62,8 +68,9 @@ class _CartWidgetState extends State<CartWidget> {
 
 class L extends StatelessWidget {
   CartListModelNew model;
+  final Function refresh;
 
-  L(this.model);
+  L(this.model, {this.refresh});
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +79,8 @@ class L extends StatelessWidget {
         builder: (context, child, model) {
           this.model = model;
           int index = 0;
-          return Expanded(child: ListView.builder(
+          return Expanded(
+              child: ListView.builder(
             shrinkWrap: true,
             padding: EdgeInsets.all(0),
             itemExtent: 93,
@@ -81,9 +89,9 @@ class L extends StatelessWidget {
               return CartItemWidget(model.items[index],
                   addCount: _addCount,
                   downCount: _downCount,
-                  index: index,
-                  refresh: () {},
-                  switchChaned: _switchChanged);
+                  index: index, refresh: () {
+                refresh();
+              }, switchChaned: _switchChanged);
             },
 
 //              Wrap(
@@ -135,119 +143,152 @@ class CartItemWidget extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(8),
       width: MediaQuery.of(context).size.width,
-      color: Colors.white,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Row(
-            children: <Widget>[
-              Container(
-                margin: EdgeInsets.all(5),
-                child: InkWell(
-                  onTap: () => switchChaned(index),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Icon(
-                        data.isSelected
-                            ? Icons.check_circle_outline
-                            : Icons.radio_button_unchecked,
-                        color: KColorConstant.themeColor,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Container(
-                child: Image.network(
-                  data.imageUrl,
-                  width: ScreenUtil().setWidth(120),
-                  height: ScreenUtil().setWidth(200),
-                ),
-                decoration: BoxDecoration(
-                  border: Border(
-                    top: BorderSide(width: 1, color: Colors.black12),
-                    right: BorderSide(width: 1, color: Colors.black12),
-                    left: BorderSide(width: 1, color: Colors.black12),
-                    bottom: BorderSide(width: 1, color: Colors.black12),
-                  ),
-                ),
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        width: ScreenUtil().setWidth(350),
-                        margin: EdgeInsets.only(left: 5),
-                        child: Text(data.productName),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(left: 5),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border(
+          top: BorderSide(width: 1, color: Colors.black12),
+          bottom: BorderSide(width: 1, color: Colors.black12),
+        ),
+      ),
+      child: SingleChildScrollView(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                Container(
+                  margin: EdgeInsets.all(5),
+                  child: InkWell(
+                    onTap: () => switchChaned(index),
                     child: Row(
-                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        GestureDetector(
-                          onTap: () => data.count > 1 && downCount(index),
-                          child: Container(
-                            width: ScreenUtil().setWidth(50),
-                            height: ScreenUtil().setWidth(50),
-                            decoration:
-                                BoxDecoration(border: _getRemoveBtBorder()),
-                            child: Icon(Icons.remove,
-                                color: _getRemovebuttonColor()),
-                          ),
-                        ),
-                        Container(
-                            alignment: Alignment.center,
-                            width: ScreenUtil().setWidth(50),
-                            height: ScreenUtil().setWidth(50),
-                            decoration: BoxDecoration(
-                                border: Border.all(
-                                    color: KColorConstant.cartItemCountTxtColor,
-                                    width: 1)),
-                            child: Text(
-                              data.count.toString(),
-                              style: TextStyle(
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.bold,
-                                  color: KColorConstant.cartItemCountTxtColor),
-                            )),
-                        GestureDetector(
-                          onTap: () =>
-                              data.count < data.buyLimit && addCount(index),
-                          child: Container(
-                            alignment: Alignment.center,
-                            width: ScreenUtil().setWidth(50),
-                            height: ScreenUtil().setWidth(50),
-                            decoration:
-                                BoxDecoration(border: _getAddBtBorder()),
-                            child: Icon(Icons.add, color: _getAddbuttonColor()),
-                          ),
+                        Icon(
+                          data.isSelected
+                              ? Icons.check_circle_outline
+                              : Icons.radio_button_unchecked,
+                          color: KColorConstant.themeColor,
                         ),
                       ],
                     ),
                   ),
-                ],
-              )
-            ],
-          ),
-          Container(
-              margin: EdgeInsets.only(right: 3),
-              child: Column(
-                children: <Widget>[
-                  Container(
-                    child: Text('¥ ${data.price}0'),
-                  )
-                ],
-              )),
-        ],
+                ),
+                Container(
+                  child: Image.network(
+                    data.imageUrl,
+                    width: ScreenUtil().setWidth(150),
+                    height: ScreenUtil().setWidth(200),
+                  ),
+                  decoration: BoxDecoration(
+                    border: Border(
+                      top: BorderSide(width: 1, color: Colors.black12),
+                      right: BorderSide(width: 1, color: Colors.black12),
+                      left: BorderSide(width: 1, color: Colors.black12),
+                      bottom: BorderSide(width: 1, color: Colors.black12),
+                    ),
+                  ),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Container(
+                          width: ScreenUtil().setWidth(350),
+                          margin: EdgeInsets.only(left: 5),
+                          child: Text(data.productName),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(left: 5),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                          GestureDetector(
+                            onTap: () => data.count > 1 && downCount(index),
+                            child: Container(
+                              width: ScreenUtil().setWidth(50),
+                              height: ScreenUtil().setWidth(50),
+                              decoration:
+                                  BoxDecoration(border: _getRemoveBtBorder()),
+                              child: Icon(Icons.remove,
+                                  color: _getRemovebuttonColor()),
+                            ),
+                          ),
+                          Container(
+                              alignment: Alignment.center,
+                              width: ScreenUtil().setWidth(50),
+                              height: ScreenUtil().setWidth(50),
+                              decoration: BoxDecoration(
+                                  border: Border.all(
+                                      color:
+                                          KColorConstant.cartItemCountTxtColor,
+                                      width: 1)),
+                              child: Text(
+                                data.count.toString(),
+                                style: TextStyle(
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold,
+                                    color:
+                                        KColorConstant.cartItemCountTxtColor),
+                              )),
+                          GestureDetector(
+                            onTap: () =>
+                                data.count < data.buyLimit && addCount(index),
+                            child: Container(
+                              alignment: Alignment.center,
+                              width: ScreenUtil().setWidth(50),
+                              height: ScreenUtil().setWidth(50),
+                              decoration:
+                                  BoxDecoration(border: _getAddBtBorder()),
+                              child:
+                                  Icon(Icons.add, color: _getAddbuttonColor()),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
+            Container(
+                margin: EdgeInsets.only(right: 3),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Container(
+                      child: Text('¥ ${data.price}0'),
+                    ),
+                    Container(
+                      child: GestureDetector(
+                        child: Container(
+                          margin: EdgeInsets.only(left: 30),
+                          child: Image.asset(
+                            'img/cart_bin.png',
+                            height: ScreenUtil().setHeight(40),
+                          ),
+                        ),
+                        onTap: () {
+                          var goodsId = data.id;
+                          showDialogC(context, '是否删除该商品', () {
+                            Provide.value<CartProvide>(context)
+                                .removeById(goodsId);
+                            refresh();
+                          });
+                        },
+                      ),
+                    )
+                  ],
+                )),
+          ],
+        ),
+        scrollDirection: Axis.horizontal,
       ),
     );
   }
@@ -318,7 +359,14 @@ class EmptyWidget extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(
+                        builder: (context) => IndexPage(
+                              index: 1,
+                            )),
+                    (route) => route == null);
+              },
             ),
           ),
         ],

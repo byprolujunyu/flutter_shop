@@ -118,13 +118,13 @@ class _NumCountWidgetState extends State<NumCountWidget> {
                               borderRadius: BorderRadius.circular(5),
                             ),
                           ),
-                          onTap: ()  {
+                          onTap: ()  async{
                             var goodInfo = widget.detailModel.data.goodInfo;
-                             Provide.value<CartProvide>(context).save(
+                            await Provide.value<CartProvide>(context).save(
                                 goodInfo.goodsId,
                                 goodInfo.goodsName,
                                 count,
-                                goodInfo.oriPrice,
+                                goodInfo.presentPrice,
                                 goodInfo.image1);
                              Navigator.pop(context);
                           },
