@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:flutter/material.dart';
+
 class KColorConstant {
   static const Color themeColor = Color.fromRGBO(132, 95, 63, 1.0);
   static const Color floorTitleColor = Color.fromRGBO(51, 51, 51, 1);
@@ -16,7 +18,7 @@ class KColorConstant {
   static const Color cartItemChangenumBtColor = Color.fromRGBO(153, 153, 153, 1.0);
   static const Color cartItemCountTxtColor = Color.fromRGBO(102, 102, 102, 1.0);
   static const Color cartBottomBgColor = Color(0xFFFFFFFF);
-  static const Color goPayBtBgColor = themeColor;
+  static const Color goPayBtBgColor = Colors.red;
   static const Color goPayBtTxtColor =  Color(0xFFFFFFFF);
   static const Color searchAppBarBgColor =  Color(0xFFFFFFFF);
 

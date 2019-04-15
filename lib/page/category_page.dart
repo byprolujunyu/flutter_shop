@@ -98,6 +98,7 @@ class _LeftCategoryState extends State<LeftCategory> {
 
   Widget _leftInkWell(int index) {
     bool isClick = false;
+
     isClick = (index == listIndex) ? true : false;
 
     return InkWell(

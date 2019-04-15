@@ -406,7 +406,7 @@ class CartBottomWidget extends StatelessWidget {
                     child: Row(
                       children: <Widget>[
                         Container(
-                          margin: EdgeInsets.all(5),
+                          margin: EdgeInsets.all(15),
                           child: Icon(
                             model.isAllchecked
                                 ? Icons.check_circle_outline
@@ -417,14 +417,28 @@ class CartBottomWidget extends StatelessWidget {
                         Text(
                           KString.allSelectedTxt,
                           style: TextStyle(letterSpacing: 2),
-                        )
+                        ),
                       ],
                     ),
                   ),
-                  Expanded(
-                    child: _TotalWidget(
-                      totalPrice: model.sumTotal,
-                    ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: <Widget>[
+                      Expanded(
+                        child: _TotalWidget(
+                          totalPrice: model.sumTotal,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.all(4),
+                        child: Text(
+                          KString.cartInfo,
+                          style: TextStyle(
+                              fontSize: ScreenUtil().setSp(20),
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
                   )
                 ],
               ),
@@ -432,10 +446,13 @@ class CartBottomWidget extends StatelessWidget {
             InkWell(
               child: Container(
                 alignment: Alignment.center,
-                margin: EdgeInsets.only(left: 10),
-                color: KColorConstant.goPayBtBgColor,
-                width: ScreenUtil().setWidth(300),
-                height: ScreenUtil().setWidth(100),
+                margin: EdgeInsets.only(left: 20, right: 10),
+                decoration: BoxDecoration(
+                  color: KColorConstant.goPayBtBgColor,
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                width: ScreenUtil().setWidth(120),
+                height: ScreenUtil().setWidth(80),
                 child: Text(
                   '${KString.goPayTxt}(${model.totalCount})',
                   style: TextStyle(color: KColorConstant.goPayBtTxtColor),

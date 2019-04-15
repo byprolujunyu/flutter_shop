@@ -6,6 +6,7 @@ INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/Androi
 INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:1-33:12
 MERGED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml:1:1-33:12
 MERGED from [:fluttertoast] /Users/lujunyu/jspang/flutter_shop_git/build/fluttertoast/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences] /Users/lujunyu/jspang/flutter_shop_git/build/shared_preferences/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-7:12
 MERGED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-14:12
 INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/debug/AndroidManifest.xml:1:1-7:12
@@ -70,6 +71,8 @@ INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/Androi
 INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/main/AndroidManifest.xml
 MERGED from [:fluttertoast] /Users/lujunyu/jspang/flutter_shop_git/build/fluttertoast/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 MERGED from [:fluttertoast] /Users/lujunyu/jspang/flutter_shop_git/build/fluttertoast/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /Users/lujunyu/jspang/flutter_shop_git/build/shared_preferences/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /Users/lujunyu/jspang/flutter_shop_git/build/shared_preferences/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] /Users/lujunyu/jspang/flutter_shop_git/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 INJECTED from /Users/lujunyu/jspang/flutter_shop_git/android/app/src/debug/AndroidManifest.xml
